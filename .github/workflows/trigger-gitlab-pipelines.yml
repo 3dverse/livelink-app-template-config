@@ -10,13 +10,43 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      # Step 1: Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Detect added or deleted files
+      - name: Check for added or deleted files
+        id: changes
+        run: |
+          # Get the list of added or deleted files
+          ADDED_DELETED_FILES=$(git diff --name-status HEAD^ HEAD | grep -E '^[A|D]' | cut -f2)
+          echo "added_deleted_files=$ADDED_DELETED_FILES" >> $GITHUB_ENV
+          
+      # Step 3: Check if 'scenes' in config.json has changed
+      - name: Check if 'scenes' property has changed
+        id: config-check
+        run: |
+          # Extract scenes property from current and previous versions of config.json
+          CURRENT_SCENES=$(jq '.scenes' config.json 2>/dev/null || echo "null")
+          PREVIOUS_SCENES=$(git show HEAD^:config.json | jq '.scenes' 2>/dev/null || echo "null")
+
+          # Compare the scenes property
+          if [ "$CURRENT_SCENES" != "$PREVIOUS_SCENES" ]; then
+            echo "scenes_changed=true" >> $GITHUB_ENV
+          else
+            echo "scenes_changed=false" >> $GITHUB_ENV
+          fi 
+
+      # Step 4: trigger pipelines only if files (e.g scenes) were added or deleted
       - name: Trigger GitLab CI pipeline for main branch
+        if: env.added_deleted_files != '' || env.scenes_changed == 'true'
         run: |
           curl --request POST \
                --form "token=${{ secrets.GITLAB_PIPELINE_TRIGGER_TOKEN }}" \
                --form "ref=main" \
                "https://gitlab.com/api/v4/projects/63092469/trigger/pipeline"
       - name: Trigger GitLab CI pipeline for prod branch
+        if: env.added_deleted_files != '' || env.scenes_changed == 'true'
         run: |
           curl --request POST \
                --form "token=${{ secrets.GITLAB_PIPELINE_TRIGGER_TOKEN }}" \
