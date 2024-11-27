@@ -4,5 +4,12 @@
   "character": "7ad339da-b5ef-401b-b9e5-cc526c129e6a",
   "public_token": "public_IyLbKjRGgGwISB3f",
   "default_camera_mode": 3,
-  "visibility": "public"
+  "visibility": "public",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 2
+        }
+      }
+  }
 }
