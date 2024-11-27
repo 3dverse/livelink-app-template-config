@@ -1,0 +1,48 @@
+{
+  "scenes": [
+    "dev",
+    "virtualcommissioning",
+    "nadk",
+    "grotte-chauvet",
+    "marseille",
+    "boosttatrybu-proto1",
+    "boosttatrybu-proto2",
+    "chaos-corona",
+    "xde-demo"
+  ],
+
+  "default_camera_mode": 2,
+
+  "entity_names": {
+    "default_camera_transform": "default_camera_transform",
+    "default_orbit_pivot": "default_orbit_pivot",
+    "character_spawn": "character_spawn"
+  },
+
+  "entity_tags": {
+    "controller_script": "controller-script"
+  },
+
+  "camera": {
+    "default_speeds": {
+      "regular": {
+        "move": 3,
+        "zoom": 1
+      },
+      "focused": {
+        "move": 1,
+        "zoom": 0.2
+      }
+    },
+    "default_sensitivity": {
+      "regular": 1.0,
+      "focused": 1.0
+    }
+  },
+
+  "focusOnLabelOptions": {
+    "lookAtLabelPosition": true,
+    "enableTransition": false,
+    "durationInSec": 2
+  }
+}

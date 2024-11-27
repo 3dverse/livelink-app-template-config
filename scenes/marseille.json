@@ -1,0 +1,16 @@
+{
+  "comment": "3dverse demo - Large Scale Environment - Marseille",
+  "scene": "4951ac84-230d-4097-ac70-86d19dfa91bf",
+  "character": "8c8bd21f-02fd-4612-b0a4-2671ab5e79a7",
+  "public_token": "public_eiuPLYSII4j--crV",
+  "default_camera_mode": 2,
+  "visibility": "public",
+
+  "camera": {
+    "default_speeds": {
+      "regular": {
+        "move": 20
+      }
+    }
+  }
+}

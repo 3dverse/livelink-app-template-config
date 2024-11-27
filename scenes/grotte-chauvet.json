@@ -1,0 +1,10 @@
+{
+  "comment": "Ministère de la culture - Grotte Chauvet",
+  "scene": "4d976e1b-5bf8-4de8-926a-37b68740c3f4",
+  "comment_character": "1st person controller might work but the scene does not have colliders",
+  "character_": "6ec01c5d-9b06-4748-ad56-20598a932c7c",
+  "character": "",
+  "public_token": "public_ZqC8xOv6l9P4-h8f",
+  "default_camera_mode": 3,
+  "visibility": "public"
+}
