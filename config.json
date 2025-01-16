@@ -10,7 +10,8 @@
     "boosttatrybu-proto3",
     "chaos-corona",
     "xde-demo",
-    "showroom-NADK"
+    "showroom-NADK",
+    "showroom-cassandre"
   ],
 
   "default_camera_mode": 2,
