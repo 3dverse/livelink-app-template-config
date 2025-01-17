@@ -1,0 +1,16 @@
+{
+  "comment": "3dverse Homme de Morlaix",
+  "scene": "8ed0b018-f695-455e-8eef-49ecd890f9af",
+  "character": "",
+  "public_token": "public_Q53v7vWwG2YQvgsh",
+  "default_camera_mode": 2,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 5
+        }
+      }
+  }
+}
