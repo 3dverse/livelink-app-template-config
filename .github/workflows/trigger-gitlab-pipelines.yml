@@ -73,7 +73,7 @@ jobs:
           project_id=63092469
 
           while true; do
-            response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}" \
+            response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_ACCESS_TOKEN_READ_API }}" \
               "https://gitlab.com/api/v4/projects/$project_id/pipelines/$pipeline_id")
             
             status=$(echo "$response" | jq -r '.status')
@@ -125,7 +125,7 @@ jobs:
           project_id=63092469
 
           while true; do
-            response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}" \
+            response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_ACCESS_TOKEN_READ_API }}" \
               "https://gitlab.com/api/v4/projects/$project_id/pipelines/$pipeline_id")
             
             status=$(echo "$response" | jq -r '.status')
