@@ -12,7 +12,8 @@
     "xde-demo",
     "showroom-NADK",
     "showroom-cassandre",
-    "showroom-lheurebleue"
+    "showroom-lheurebleue",
+    "test-fail",
   ],
 
   "default_camera_mode": 2,
