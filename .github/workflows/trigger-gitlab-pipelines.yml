@@ -83,7 +83,11 @@ jobs:
               exit 1
             fi
 
-            echo "Main pipeline status: $status"
+            if [ "$status" == "running" ]; then
+              echo -n "."
+            else
+              echo "Main pipeline status: $status"
+            fi
 
             if [ "$status" == "success" ]; then
               echo "Main pipeline succeeded."
@@ -135,7 +139,11 @@ jobs:
               exit 1
             fi
 
-            echo "Prod pipeline status: $status"
+            if [ "$status" == "running" ]; then
+              echo -n "."
+            else
+              echo "Prod pipeline status: $status"
+            fi
 
             # Check if the pipeline is completed
             if [ "$status" == "success" ]; then
