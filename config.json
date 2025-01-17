@@ -13,7 +13,7 @@
     "showroom-NADK",
     "showroom-cassandre",
     "showroom-lheurebleue",
-    "test-fail",
+    "test-fail",,
   ],
 
   "default_camera_mode": 2,
