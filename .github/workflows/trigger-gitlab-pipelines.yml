@@ -3,54 +3,149 @@ name: Trigger GitLab Pipeline
 on:
   push:
     branches:
-      - main  # Trigger on push to 'main' branch (modify as needed)
+      - main # Trigger on push to 'main' branch (modify as needed)
 
 jobs:
   trigger:
     runs-on: ubuntu-latest
-    
+
     steps:
       # Step 1: Checkout the code
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2  # Fetch the current and previous commits to ensure HEAD^ exists
+          fetch-depth: 2 # Fetch the current and previous commits to ensure HEAD^ exists
 
       # Step 2: Detect added or deleted files
       - name: Check for added or deleted files
         id: changes
         run: |
-          # Get the list of added or deleted files
           ADDED_DELETED_FILES=$(git diff --name-status HEAD^ HEAD | grep -E '^[A|D]' | cut -f2)
-          echo "added_deleted_files=$ADDED_DELETED_FILES" >> $GITHUB_ENV
-          
+
+          if [ -z "$ADDED_DELETED_FILES" ]; then
+            echo "No added or deleted files detected."
+          else
+            echo "Added or deleted files detected: $ADDED_DELETED_FILES"
+            echo "added_deleted_files=$ADDED_DELETED_FILES" >> $GITHUB_ENV
+          fi
+
       # Step 3: Check if 'scenes' in config.json has changed
       - name: Check if 'scenes' property has changed
         id: config-check
         run: |
-          # Extract scenes property from current and previous versions of config.json
           CURRENT_SCENES=$(jq '.scenes' config.json 2>/dev/null || echo "null")
           PREVIOUS_SCENES=$(git show HEAD^:config.json | jq '.scenes' 2>/dev/null || echo "null")
 
-          # Compare the scenes property
           if [ "$CURRENT_SCENES" != "$PREVIOUS_SCENES" ]; then
+            echo "Changes detected in 'scenes' property."
             echo "scenes_changed=true" >> $GITHUB_ENV
           else
+            echo "No changes detected in 'scenes' property."
             echo "scenes_changed=false" >> $GITHUB_ENV
-          fi 
+          fi
 
-      # Step 4: trigger pipelines only if files (e.g scenes) were added or deleted
+      # Step 4: Trigger GitLab CI pipeline for main branch only if files (e.g scenes) were added or deleted
       - name: Trigger GitLab CI pipeline for main branch
+        id: trigger-main
         if: env.added_deleted_files != '' || env.scenes_changed == 'true'
         run: |
-          curl --request POST \
-               --form "token=${{ secrets.GITLAB_PIPELINE_TRIGGER_TOKEN }}" \
-               --form "ref=main" \
-               "https://gitlab.com/api/v4/projects/63092469/trigger/pipeline"
+          response=$(curl --silent --request POST \
+            --form "token=${{ secrets.GITLAB_PIPELINE_TRIGGER_TOKEN }}" \
+            --form "ref=main" \
+            "https://gitlab.com/api/v4/projects/63092469/trigger/pipeline")
+
+          echo "$response"
+          pipeline_id=$(echo "$response" | jq -r '.id')
+
+          if [ "$pipeline_id" == "null" ]; then
+            echo "Failed to trigger GitLab main pipeline."
+            exit 1
+          fi
+
+          echo "GitLab main pipeline triggered with ID: $pipeline_id"
+          echo "main_pipeline_id=$pipeline_id" >> $GITHUB_ENV
+
+      # Step 5: Monitor the status of the main branch pipeline
+      - name: Monitor GitLab CI pipeline for main branch
+        if: env.main_pipeline_id
+        run: |
+          pipeline_id=${{ env.main_pipeline_id }}
+          project_id=63092469
+
+          while true; do
+            response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}" \
+              "https://gitlab.com/api/v4/projects/$project_id/pipelines/$pipeline_id")
+            
+            status=$(echo "$response" | jq -r '.status')
+
+            if [ "$status" == "null" ]; then
+              echo "Failed to fetch main pipeline status."
+              exit 1
+            fi
+
+            echo "Main pipeline status: $status"
+
+            if [ "$status" == "success" ]; then
+              echo "Main pipeline succeeded."
+              break
+            elif [ "$status" == "failed" ] || [ "$status" == "canceled" ]; then
+              echo "Main pipeline failed or was canceled."
+              exit 1
+            fi
+
+            sleep 5
+          done
+
+      # Step 6: Trigger GitLab CI pipeline for prod branch if main branch pipeline succeeded
       - name: Trigger GitLab CI pipeline for prod branch
-        if: env.added_deleted_files != '' || env.scenes_changed == 'true'
+        id: trigger-prod
+        if: steps.trigger-main.outcome == 'success'
         run: |
-          curl --request POST \
-               --form "token=${{ secrets.GITLAB_PIPELINE_TRIGGER_TOKEN }}" \
-               --form "ref=prod" \
-               "https://gitlab.com/api/v4/projects/63092469/trigger/pipeline"
+          response=$(curl --silent --request POST \
+            --form "token=${{ secrets.GITLAB_PIPELINE_TRIGGER_TOKEN }}" \
+            --form "ref=prod" \
+            "https://gitlab.com/api/v4/projects/63092469/trigger/pipeline")
+
+          echo "$response"
+          pipeline_id=$(echo "$response" | jq -r '.id')
+
+          if [ "$pipeline_id" == "null" ]; then
+            echo "Failed to trigger GitLab prod pipeline."
+            exit 1
+          fi
+
+          echo "GitLab prod pipeline triggered with ID: $pipeline_id"
+          echo "prod_pipeline_id=$pipeline_id" >> $GITHUB_ENV
+
+      # Step 7: Monitor the status of the prod branch pipeline
+      - name: Monitor GitLab CI pipeline for prod branch
+        if: env.prod_pipeline_id
+        run: |
+          pipeline_id=${{ env.prod_pipeline_id }}
+          project_id=63092469
+
+          while true; do
+            response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}" \
+              "https://gitlab.com/api/v4/projects/$project_id/pipelines/$pipeline_id")
+            
+            status=$(echo "$response" | jq -r '.status')
+
+            if [ "$status" == "null" ]; then
+              echo "Failed to fetch prod pipeline status."
+              exit 1
+            fi
+
+            echo "Prod pipeline status: $status"
+
+            # Check if the pipeline is completed
+            if [ "$status" == "success" ]; then
+              echo "Prod pipeline succeeded."
+              break
+            elif [ "$status" == "failed" ] || [ "$status" == "canceled" ]; then
+              echo "Prod pipeline failed or was canceled."
+              exit 1
+            fi
+
+            # Wait for 5 seconds before checking again
+            sleep 5
+          done
