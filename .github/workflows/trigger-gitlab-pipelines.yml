@@ -92,9 +92,35 @@ jobs:
             if [ "$status" == "success" ]; then
               echo "Main pipeline succeeded."
               break
-            elif [ "$status" == "failed" ] || [ "$status" == "canceled" ]; then
-              echo "Main pipeline failed or was canceled."
+            elif [ "$status" == "canceled" ]; then
+              echo "Main pipeline was canceled."
               exit 1
+            elif [ "$status" == "failed" ]; then
+              echo "Main pipeline failed. Fetching job error details..."
+              
+              # Get the list of jobs for the failed pipeline
+              response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_ACCESS_TOKEN_READ_API }}" \
+                "https://gitlab.com/api/v4/projects/$project_id/pipelines/$pipeline_id/jobs")
+              
+              # Parse the job details to find the failed job(s)
+              failed_jobs=$(echo "$response" | jq -r '.[] | select(.status == "failed") | .id')
+
+              if [ -z "$failed_jobs" ]; then
+                echo "No failed jobs found."
+              else
+                for job_id in $failed_jobs; do
+                  echo "Fetching error details for job ID: $job_id"
+                  
+                  # Fetch the job details to get the error log
+                  job_response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}" \
+                    "https://gitlab.com/api/v4/projects/$project_id/jobs/$job_id")
+                  
+                  job_log=$(echo "$job_response" | jq -r '.trace')
+
+                  echo "Job error log:"
+                  echo "$job_log"
+                done
+              fi
             fi
 
             sleep 5
@@ -149,9 +175,35 @@ jobs:
             if [ "$status" == "success" ]; then
               echo "Prod pipeline succeeded."
               break
-            elif [ "$status" == "failed" ] || [ "$status" == "canceled" ]; then
-              echo "Prod pipeline failed or was canceled."
+            elif [ "$status" == "canceled" ]; then
+              echo "Prod pipeline was canceled."
               exit 1
+            elif [ "$status" == "failed" ]; then
+              echo "Prod pipeline failed. Fetching job error details..."
+              
+              # Get the list of jobs for the failed pipeline
+              response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_ACCESS_TOKEN_READ_API }}" \
+                "https://gitlab.com/api/v4/projects/$project_id/pipelines/$pipeline_id/jobs")
+              
+              # Parse the job details to find the failed job(s)
+              failed_jobs=$(echo "$response" | jq -r '.[] | select(.status == "failed") | .id')
+
+              if [ -z "$failed_jobs" ]; then
+                echo "No failed jobs found."
+              else
+                for job_id in $failed_jobs; do
+                  echo "Fetching error details for job ID: $job_id"
+                  
+                  # Fetch the job details to get the error log
+                  job_response=$(curl --silent --header "PRIVATE-TOKEN: ${{ secrets.GITLAB_PERSONAL_ACCESS_TOKEN }}" \
+                    "https://gitlab.com/api/v4/projects/$project_id/jobs/$job_id")
+                  
+                  job_log=$(echo "$job_response" | jq -r '.trace')
+
+                  echo "Job error log:"
+                  echo "$job_log"
+                done
+              fi
             fi
 
             # Wait for 5 seconds before checking again
