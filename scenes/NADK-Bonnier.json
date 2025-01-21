@@ -1,0 +1,17 @@
+{
+  "comment": "NADK Bonnier",
+  "scene": "425f1f1e-2995-4c5e-849a-39c505038dbd",
+  "console_link": "https://console.3dverse.com/nadk/nadk-3-le-globe/default/folders/d1ed2587-690e-4ebb-add3-a830073ceda5",
+  "character": "",
+  "public_token": "public_-nM_De0OP4HFtVZc",
+  "default_camera_mode": 2,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 5
+        }
+      }
+  }
+}
