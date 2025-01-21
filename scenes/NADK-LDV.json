@@ -1,0 +1,17 @@
+{
+  "comment": "NADK Leonardo Da Vinci Amphitheatre",
+  "scene": "a275f14a-6ba6-479d-96c4-dce2bc248fbd",
+  "console_link": "https://console.3dverse.com/nadk/nadk-leonardo-da-vinci-amphitheatre/default/folders/f8af2cd4-9837-44ef-8fee-ced6ad598216",
+  "character": "",
+  "public_token": "public_8Y8EFuoYIytcDkJE",
+  "default_camera_mode": 2,
+  "visibility": "public",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 5
+        }
+      }
+  }
+}
