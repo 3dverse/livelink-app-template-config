@@ -5,7 +5,7 @@
   "character": "",
   "public_token": "public_8Y8EFuoYIytcDkJE",
   "default_camera_mode": 2,
-  "visibility": "public",
+  "visibility": "private",
   "camera": {
       "default_speeds": {
         "regular": {
