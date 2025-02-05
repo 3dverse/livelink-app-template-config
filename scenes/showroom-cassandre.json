@@ -4,5 +4,13 @@
   "character": "",
   "public_token": "public_ag24iyqHeg_UhaAZ",
   "default_camera_mode": 3,
-  "visibility": "private"
+  "visibility": "private",
+   "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 5
+        }
+      }
+  }
 }
