@@ -1,0 +1,16 @@
+{
+  "comment": "Mask Bombo",
+  "scene": "45b22798-24f9-4f8d-8242-0a40fe5b47ef",
+  "character": "",
+  "public_token": "5b993b8f-235e-4bb4-a337-985ad78658b4",
+  "default_camera_mode": 2,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 5
+        }
+      }
+  }
+}
