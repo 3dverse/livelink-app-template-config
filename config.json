@@ -16,7 +16,8 @@
     "morlaix",
     "NADK-LDV",
     "NADK-Bonnier",
-    "ikonospace-proto1"
+    "ikonospace-proto1",
+    "cabinet"
   ],
 
   "default_camera_mode": 2,
