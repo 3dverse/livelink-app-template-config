@@ -4,7 +4,7 @@
   "character": "",
   "public_token": "public_QGABrpgmP_qjBotV",
   "default_camera_mode": 2,
-  "visibility": "private",
+  "visibility": "public",
   "camera": {
       "default_speeds": {
         "regular": {
