@@ -17,7 +17,8 @@
     "NADK-LDV",
     "NADK-Bonnier",
     "ikonospace-proto1",
-    "cabinet"
+    "cabinet",
+    "maskBombo"
   ],
 
   "default_camera_mode": 2,
