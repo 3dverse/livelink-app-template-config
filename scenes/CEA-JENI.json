@@ -1,0 +1,15 @@
+{
+  "comment": "3dverse demo - JENI project",
+  "scene": "a977f43c-5d15-4f8d-8cc1-927199c885d4",
+  "character": "d88242dc-b0dc-46a4-9346-75c0b449f166",
+  "public_token": "public_YoV1LBvlgvrkrxVp",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 2
+        }
+      }
+  }
+}
