@@ -19,3 +19,10 @@ Scene configuration:
 | `entity_names.default_camera_transform` | The name of the entity whose local_transform is used as the default transform of the regular camera, instead of the one of the settings of the scene asset.|
 | `entity_tags.controller_script` | The value to search in the `tags` component of entities owning a `script_map` component, so those can be used as "controller script" to be used by the client.|
 | `camera.default_speeds` & `camera.default_sensitivity` | The speeds in meters per second:<br><li> `regular` is used by default<li>`focused` is used when the user focus to a label point of view. |
+| `info.title` | The title of the scene. |
+| `info.description` | The description of the scene. |
+| `info.steps` | An array of actions suggested to exlore the scene. |
+| `info.steps.id` |  The id of the action. |
+| `info.steps.title` |  The title of the action. |
+| `info.steps.description` | The description of the action. |
+| `info.tags` | An array of tags related to the scene. |

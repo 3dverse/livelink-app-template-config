@@ -12,5 +12,21 @@
         "move": 100
       }
     }
+  },
+
+  "info": {
+    "title": "Marseille",
+    "description": "Marseille is a city in the south of France. It is known for its beautiful beaches, its old town, and its port. It is also known for its football team.",
+    "steps": [
+        {
+            "title": "Explore views",
+            "description": "Quicly navigate to diferents points of interest via views."
+        },
+        {
+            "title": "Invite someone to collaborate",
+            "description": "3dverse includes built-in collaboration features."
+        }
+    ],
+    "tags": ["HQ Textures", "Realistic", "High Quality"]
   }
 }
