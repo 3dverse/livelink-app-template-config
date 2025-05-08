@@ -13,5 +13,24 @@
           "zoom": 5
         }
       }
+  },
+  "info": {
+    "title": "DICOM & Voxel Rendering",
+    "description": "Visualize medical data with precision, seamlessly blending DICOM files and voxel-based 3D models.",
+    "steps": [
+        {
+            "title": "Multi-Layer Visualization",
+            "description": " Load and visualize DICOM files alongside voxel representations for accurate medical imaging."
+        },
+        {
+            "title": "Mesh Generation from Voxel Data",
+            "description": "Convert volumetric data into accurate 3D meshes, maintaining precision and detail."
+        },
+        {
+            "title": "Parallel Representation",
+            "description": "Simultaneously display original voxel data and reconstructed meshes, ensuring complete visualization control."
+        }
+    ],
+    "tags": ["Medical", "DICOM", "Voxel"]
   }
 }

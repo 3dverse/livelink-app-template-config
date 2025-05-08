@@ -16,25 +16,18 @@
   },
 
   "info": {
-    "title": "Title of the scene",
-    "description": "Description of the scene key values.",
+    "title": "Real-Time Collaboration",
+    "description": "Collaborate in real-time with multiple users, each maintaining independent views within the same 3D scene.",
     "steps": [
-      {
-        "id": "explore-labels",
-        "title": "Explore labels",
-        "description": "Quicly navigate to diferents points of interest via labels."
-      },
-      {
-        "id": "invite-collaborator",
-        "title": "Invite collaborator",
-        "description": "Invite someone to collaborate with you in the scene."
-      },
-      {
-        "id": "play-with-lights",
-        "title": "Play with lights",
-        "description": "Control any lights in any 3D models."
-      }
+        {
+            "title": "Multi-User",
+            "description": "Multiple users can join the same 3D environment in real-time, each with independent camera controls."
+        },
+        {
+            "title": "Synchronized Interaction",
+            "description": "Edits and actions are instantly visible to all participants, maintaining a persistent environment."
+        }
     ],
-    "tags": ["HQ Textures", "Realistic", "High Quality"]
+    "tags": []
   }
 }

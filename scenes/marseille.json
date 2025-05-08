@@ -15,18 +15,18 @@
   },
 
   "info": {
-    "title": "Marseille",
-    "description": "Marseille is a city in the south of France. It is known for its beautiful beaches, its old town, and its port. It is also known for its football team.",
+    "title": "Large Scale Environment",
+    "description": "A high performance environment leveraging large-scale 3D Tiles and adaptive streaming for seamless, real-time exploration.",
     "steps": [
         {
-            "title": "Explore views",
-            "description": "Quicly navigate to diferents points of interest via views."
+            "title": "Multi-Format Compatibility",
+            "description": "Combines IFC files, OBJ, and other formats in the same scene."
         },
         {
-            "title": "Invite someone to collaborate",
-            "description": "3dverse includes built-in collaboration features."
+            "title": "High-Performance Geospatial Streaming",
+            "description": "Renders large-scale geospatial datasets without performance loss, maintaining visual fidelity."
         }
     ],
-    "tags": ["HQ Textures", "Realistic", "High Quality"]
+    "tags": ["Smart City", "Large Scale", "3D Tiles"]
   }
 }
