@@ -17,7 +17,7 @@
 
   "info": {
     "title": "Real-Time Collaboration",
-    "description": "Collaborate in real-time with multiple users, each maintaining independent views within the same 3D scene.",
+    "description": "Invite collaborators to join the same 3D scene and navigate together in real-time. Each user maintains an independent view with full camera control, while edits and actions are synchronized across all participants in a persistent, shared environment.",
     "steps": [
         {
             "title": "Multi-User",
