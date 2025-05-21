@@ -16,7 +16,7 @@
 
   "info": {
     "title": "Large Scale Environment",
-    "description": "A high performance environment leveraging large-scale 3D Tiles and adaptive streaming for seamless, real-time exploration.",
+    "description": "Explore and navigate through a high-performance 3D tile ecosystem designed for large-scale environments. Adaptive streaming enables seamless, real-time interaction, with configurable loading and unloading radii to optimize performance based on user context.",
     "steps": [
         {
             "title": "Multi-Format Compatibility",
