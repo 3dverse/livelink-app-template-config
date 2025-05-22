@@ -21,7 +21,11 @@
     "steps": [
         {
             "title": "Multi-User",
-            "description": "Multiple users can join the same 3D environment in real-time, each with independent camera controls."
+            "description": "Multiple users can join the same 3D environment in real-time, each with independent camera controls.",
+            "action": {
+                "title": "Invite a new user",
+                "id": "invite-collaborator"
+            }
         },
         {
             "title": "Synchronized Interaction",

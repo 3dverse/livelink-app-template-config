@@ -20,7 +20,11 @@
     "steps": [
         {
             "title": "Multi-Format Compatibility",
-            "description": "Combines IFC files, OBJ, and other formats in the same scene."
+            "description": "Combines IFC files, OBJ, and other formats in the same scene.",
+            "action": {
+                "title": "Go to the Port point of view",
+                "id": "change-view"
+            }
         },
         {
             "title": "High-Performance Geospatial Streaming",
