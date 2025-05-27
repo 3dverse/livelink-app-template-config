@@ -16,7 +16,7 @@
 
   "info": {
     "title": "Large Scale Environment",
-    "description": "Explore and navigate through a high-performance 3D tile ecosystem designed for large-scale environments. Adaptive streaming enables seamless, real-time interaction, with configurable loading and unloading radii to optimize performance based on user context.",
+    "description": "Explore and navigate through a high-performance 3D tile ecosystem designed for large-scale environments. Change loading and unloading radii for optimized performance.",
     "steps": [
         {
             "title": "Multi-Format Compatibility",
@@ -29,6 +29,14 @@
         {
             "title": "High-Performance Geospatial Streaming",
             "description": "Renders large-scale geospatial datasets without performance loss, maintaining visual fidelity."
+        }
+        {
+            "title": "Interoperable",
+            "description": "Connect IoTs, APIs and Smart Objects.",
+            "action": {
+                "title": "Go to the Street Lights point of view",
+                "id": "change-view"
+            }
         }
       
     ],
