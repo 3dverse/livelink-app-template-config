@@ -30,13 +30,7 @@
             "title": "High-Performance Geospatial Streaming",
             "description": "Renders large-scale geospatial datasets without performance loss, maintaining visual fidelity."
         }
-        {
-            "title": "Interoperable",
-            "description": "Connect any API, AI, or smart object.",
-            "action": {
-                "title": "Go to the Street lights point of view",
-                "id": "change-view"
-            }
+      
     ],
     "tags": ["Smart City", "Large Scale", "3D Tiles"]
   }
