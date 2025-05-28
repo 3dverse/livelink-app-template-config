@@ -1,0 +1,15 @@
+{
+  "comment": "3dverse demo - Hadrian project",
+  "scene": "4da5dab6-88c7-426e-b475-e87ef8cdea0c",
+  "character": "d23e1d25-a84b-4517-9b6e-3a2244a4230d",
+  "public_token": "public_yoY0rtMuUMaOHM3o",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 2
+        }
+      }
+  }
+}
