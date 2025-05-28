@@ -19,6 +19,14 @@
     "description": "Explore and navigate through a high-performance 3D tile ecosystem designed for large-scale environments like cities with ports. Change loading and unloading radii for optimized performance.",
     "steps": [
         {
+            "title": "Interoperable",
+            "description": "Connect IoTs, APIs and Smart Objects directly into your large-scale environment.",
+            "action": {
+                "title": "Update street lights colors",
+                "id": "change-light-colors"
+            }
+        },
+        {
             "title": "Multi-Format Compatibility",
             "description": "Combines IFC files, OBJ, and other formats in the same scene.",
             "action": {
