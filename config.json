@@ -22,7 +22,8 @@
     "cabinet",
     "maskBombo",
     "MusX",
-    "CEA-JENI"
+    "CEA-JENI",
+    "hadrian"
   ],
 
   "default_camera_mode": 2,
