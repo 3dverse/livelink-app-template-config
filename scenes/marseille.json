@@ -9,7 +9,7 @@
   "camera": {
     "default_speeds": {
       "regular": {
-        "move": 100
+        "move": 45
       }
     }
   },
