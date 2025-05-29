@@ -22,7 +22,7 @@
             "title": "Interoperable",
             "description": "Connect IoTs, APIs and Smart Objects directly into your large-scale environment.",
             "action": {
-                "title": "Update street lights colors",
+                "title": "Adjust street lights in real-time",
                 "id": "change-light-colors"
             }
         },
