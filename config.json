@@ -23,7 +23,8 @@
     "maskBombo",
     "MusX",
     "CEA-JENI",
-    "hadrian"
+    "hadrian",
+    "festo"
   ],
 
   "default_camera_mode": 2,
