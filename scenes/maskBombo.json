@@ -16,19 +16,19 @@
   },
   "info": {
     "title": "Mask Bombo",
-    "description": "Experience ultra-detailed, photorealistic 3D visuals streamed directly from the cloud, optimized for any device.",
+    "description": "Ultra-Realistic 3D Cloud Streaming",
     "steps": [
         {
             "title": "Cloud-Native Texture Streaming",
-            "description": "High-resolution textures are dynamically streamed from the cloud, ensuring sharp, detailed visuals without local processing."
+            "description": "Experience photo-realistic 3D visuals streamed in real time- no local rendering required."
         },
         {
             "title": "Triangle-Based Geometry Optimization",
-            "description": "Complex surfaces are rendered efficiently using high-density triangle meshes, preserving intricate details."
+            "description": "Dynamically stream high-resolution textures from the cloud for sharp, rich detail."
         },
         {
             "title": "Cross-Device Compatibility",
-            "description": "Experience consistent texture quality on any device, from desktop to mobile, without performance degradation."
+            "description": "Maintain consistent visual fidelity across all devices, from desktop to mobile."
         }    
     ],
     "tags": ["High Quality", "Realistic"]
