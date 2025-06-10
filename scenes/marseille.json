@@ -16,7 +16,7 @@
 
   "info": {
     "title": "Large Scale Environment",
-    "description": "Explore and navigate through a high-performance 3D tile ecosystem designed for large-scale environments like cities with ports. Change loading and unloading radii for optimized performance.",
+    "description": "Navigate a dynamic 3D twin of Marseille built for high-performance real-time interactions. Change loading and unloading radii for optimized performance.",
     "steps": [
         {
             "title": "Interoperable",
