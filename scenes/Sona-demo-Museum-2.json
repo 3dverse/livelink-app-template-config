@@ -1,0 +1,16 @@
+{
+  "comment": "Sona demo Museum 1 - Vatican",
+  "scene": "",
+  "character": "",
+  "public_token": "public_QGABrpgmP_qjBotV",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 5
+        }
+      }
+  }
+}
