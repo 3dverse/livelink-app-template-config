@@ -1,0 +1,16 @@
+{
+  "comment": "Sona demo Museum 1 - NADK",
+  "scene": "c0731a02-d86c-4b56-b835-15ec3f67906b",
+  "character": "",
+  "public_token": "public_NGDZePKKP5H5rx0x",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 5
+        }
+      }
+  }
+}
