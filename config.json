@@ -24,7 +24,9 @@
     "MusX",
     "CEA-JENI",
     "hadrian",
-    "festo"
+    "festo",
+    "Create Sona-demo-Museum-1",
+    "Create Sona-demo-Museum-2"
   ],
 
   "default_camera_mode": 2,
