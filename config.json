@@ -26,7 +26,8 @@
     "hadrian",
     "festo",
     "Sona-demo-Museum-1",
-    "Sona-demo-Museum-2"
+    "Sona-demo-Museum-2",
+    "showroom-aigle"
   ],
 
   "default_camera_mode": 2,
