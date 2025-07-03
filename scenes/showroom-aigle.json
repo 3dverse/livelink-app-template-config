@@ -9,7 +9,7 @@
       "default_speeds": {
         "regular": {
           "move": 1,
-          "zoom": 5
+          "zoom": 2
         }
       }
   }
