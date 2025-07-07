@@ -1,0 +1,16 @@
+{
+  "comment": "Showroom - Aigle - Ray Tracing",
+  "scene": "de45f14f-1fd9-4996-81d2-20b97d6c2ccf",
+  "character": "",
+  "public_token": "public_5xYpx3TjTHeE_-vB",
+  "default_camera_mode": 2,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 2
+        }
+      }
+  }
+}
