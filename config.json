@@ -27,7 +27,8 @@
     "festo",
     "Sona-demo-Museum-1",
     "Sona-demo-Museum-2",
-    "showroom-aigle"
+    "showroom-aigle",
+    "showroom-aigle-rt"
   ],
 
   "default_camera_mode": 2,
