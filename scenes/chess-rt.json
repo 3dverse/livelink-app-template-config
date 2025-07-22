@@ -8,8 +8,8 @@
   "camera": {
       "default_speeds": {
         "regular": {
-          "move": 1,
-          "zoom": 2
+          "move": 0.3,
+          "zoom": 0.5
         }
       }
   }
