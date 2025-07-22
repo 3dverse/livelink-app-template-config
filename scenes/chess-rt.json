@@ -1,0 +1,16 @@
+{
+  "comment": "Showroom - Chess Set - Ray Tracing",
+  "scene": "0fb5e63a-c51d-4bbe-9bf7-541dcb624c58",
+  "character": "",
+  "public_token": "public_za4Ee49y0RTIdraM",
+  "default_camera_mode": 2,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 2
+        }
+      }
+  }
+}
