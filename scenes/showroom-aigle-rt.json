@@ -12,5 +12,20 @@
           "zoom": 2
         }
       }
+  },
+  "info": {
+    "title": "Ray Tracing",
+    "description": "This scene showcases the ray tracing capabilities.",
+    "steps": [
+      {
+        "title": "OIDN Denoiser",
+        "description": "Enable the local AI OIDN Denoiser to improve the quality of the image.",
+        "action": {
+          "title": "Enable OIDN Denoiser",
+          "id": "enable-oidn-denoiser"
+        }
+      }
+    ],
+    "tags": ["Ray Tracing", "Denoiser"]
   }
 }
