@@ -30,7 +30,8 @@
     "sona-demo-museum-2",
     "showroom-aigle",
     "showroom-aigle-rt",
-    "chess-rt"
+    "chess-rt",
+    "chair-rt"
   ],
 
   "default_camera_mode": 2,
