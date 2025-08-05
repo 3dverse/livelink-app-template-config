@@ -1,0 +1,16 @@
+{
+  "comment": "Chaise - Ray Tracing",
+  "scene": "28b0621b-2e4b-444d-981a-6bf45c398a3f",
+  "console_link": "https://console.3dverse.com/3dverse-demo/ray-tracing/default/folders/02f1b7cc-cc4d-4e8d-b9ac-c98ac62936bd?item=28b0621b-2e4b-444d-981a-6bf45c398a3f.scene",
+  "character": "",
+  "public_token": "public_za4Ee49y0RTIdraM",
+  "default_camera_mode": 2,
+  "visibility": "public",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 1
+        }
+      }
+  }
