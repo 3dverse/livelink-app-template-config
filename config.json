@@ -32,7 +32,8 @@
     "showroom-aigle-rt",
     "chess-rt",
     "chair-rt",
-    "sightmachine-test"
+    "sightmachine-test",
+    "vehicle"
   ],
 
   "default_camera_mode": 2,
