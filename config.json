@@ -33,7 +33,8 @@
     "chess-rt",
     "chair-rt",
     "sightmachine-test",
-    "vehicle"
+    "vehicle",
+    "car-studio"
   ],
 
   "default_camera_mode": 2,
