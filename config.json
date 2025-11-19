@@ -34,7 +34,8 @@
     "chair-rt",
     "sightmachine-test",
     "vehicle",
-    "car-studio"
+    "car-studio",
+    "bugatti-rt"
   ],
 
   "default_camera_mode": 2,
