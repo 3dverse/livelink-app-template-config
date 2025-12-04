@@ -35,7 +35,8 @@
     "sightmachine-test",
     "vehicle",
     "car-studio",
-    "bugatti-rt"
+    "bugatti-rt",
+    "corpusia-showroom"
   ],
 
   "default_camera_mode": 2,
