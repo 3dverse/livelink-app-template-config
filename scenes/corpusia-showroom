@@ -1,0 +1,16 @@
+{
+  "comment": "Corpusia Showroom",
+  "scene": "e8bb2b6c-fa60-476a-9ffb-21d3c87a16ae",
+  "character": "",
+  "public_token": "public_NGDZePKKP5H5rx0x",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 1,
+          "zoom": 5
+        }
+      }
+  }
+}
