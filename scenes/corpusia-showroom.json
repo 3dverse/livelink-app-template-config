@@ -5,12 +5,13 @@
   "public_token": "public_NGDZePKKP5H5rx0x",
   "default_camera_mode": 3,
   "visibility": "private",
+  "hidden_header": true,
   "camera": {
-      "default_speeds": {
-        "regular": {
-          "move": 1,
-          "zoom": 5
-        }
+    "default_speeds": {
+      "regular": {
+        "move": 1,
+        "zoom": 5
       }
+    }
   }
 }
