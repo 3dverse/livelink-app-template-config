@@ -1,6 +1,7 @@
 {
   "scenes": [
     "dev",
+    "sncf"
     "virtualcommissioning",
     "nadk",
     "grotte-chauvet",
