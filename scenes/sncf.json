@@ -1,0 +1,15 @@
+{
+  "comment": "3dverse demo - Technicentre Bischheim",
+  "scene": "8c5815e1-84e0-4618-8235-0ec40319ecac",
+  "character": "",
+  "public_token": "public_nfR_ZSHGMXXAKABp",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 2
+        }
+      }
+  }
+}
