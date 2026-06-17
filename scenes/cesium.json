@@ -1,0 +1,16 @@
+{
+  "comment": "3dverse demo - cesium",
+  "scene": "220bc42c-9f6e-4023-96cc-d9889d2472f8",
+  "character": "",
+  "public_token": "public_tdowzMiqlMct_iTz",
+  "default_camera_mode": 2,
+  "visibility": "private",
+
+  "camera": {
+    "default_speeds": {
+      "regular": {
+        "move": 45
+      }
+    }
+  }
+}
