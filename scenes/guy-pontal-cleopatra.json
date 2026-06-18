@@ -1,0 +1,17 @@
+
+{
+  "__console": "https://console.3dverse.com/corpusia/showrooms/default/folders/f7638822-f2c2-472b-8b16-d6245a8dc098/68e29ced-ff9a-4035-a2c7-e0e389e78ecf?item=eb490afb-cc87-41c3-8cc2-15679bef7cea.scene",
+  "comment": "3dverse - Guy Pontal Cleopatra",
+  "scene": "eb490afb-cc87-41c3-8cc2-15679bef7cea",
+  "character": "",
+  "public_token": "public_ag24iyqHeg_UhaAZ",
+  "default_camera_mode": 2,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 2
+        }
+      }
+  }
+}
