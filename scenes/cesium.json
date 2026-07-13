@@ -11,5 +11,9 @@
         "move": 45
       }
     }
+  },
+
+  "sun_position_picker": {
+    "showShadowToggle": false
   }
 }
