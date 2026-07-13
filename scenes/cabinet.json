@@ -1,16 +1,15 @@
 {
   "comment": "Cabinet de curiosité",
   "scene": "3cf2aafa-9682-4adc-9bdc-b1818700f913",
-  "character": "",
   "public_token": "public_fukijjrdKlt6PzmA",
   "default_camera_mode": 3,
   "visibility": "public",
   "camera": {
-      "default_speeds": {
-        "regular": {
-          "move": 1,
-          "zoom": 5
-        }
+    "default_speeds": {
+      "regular": {
+        "move": 1,
+        "zoom": 5
       }
+    }
   }
 }

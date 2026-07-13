@@ -1,7 +1,9 @@
 {
   "comment": "3dverse - ibisdev - YPF - demo",
   "scene": "bbd8af51-0cd8-4f3c-b4fd-26d996c865cb",
-  "character": "8fc5626f-5fe0-4945-898e-891c5f70c459",
+  "__": "using the character of the common config.json",
+  "__scene3rdPersonController": "8fc5626f-5fe0-4945-898e-891c5f70c459",
+  "enable3rdPersonController": true,
   "public_token": "public_8HIwIlhGpVizH6Xz",
   "default_camera_mode": 2,
   "visibility": "private",

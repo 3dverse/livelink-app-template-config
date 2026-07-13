@@ -45,6 +45,10 @@
 
   "default_camera_mode": 2,
 
+  "__": "common public 3rd person controller for all scenes: ",
+  "__console_link": "https://console.3dverse.com/3dverse/labs/prod/folders/dd7f3d22-0221-4ff1-a117-8a963dffe26c?item=87bf35de-45ba-493e-b158-4957bc299257.scene",
+  "scene3rdPersonController": "87bf35de-45ba-493e-b158-4957bc299257",
+
   "entity_names": {
     "default_camera_transform": "default_camera_transform",
     "default_orbit_pivot": "default_orbit_pivot",
