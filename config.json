@@ -1,6 +1,7 @@
 {
   "scenes": [
     "dev",
+    "aura-interact",
     "mitek",
     "sncf",
     "virtualcommissioning",
