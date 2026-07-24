@@ -1,0 +1,14 @@
+{
+  "comment": "Aura-interact test",
+  "scene": "8a1d894b-e532-4748-b9dd-251e254cc09a",
+  "public_token": "public_-gGx3ipt9nePCZFM",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 2
+        }
+      }
+  }
+}
