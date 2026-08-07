@@ -7,7 +7,9 @@
   "public_token": "public_eiuPLYSII4j--crV",
   "default_camera_mode": 2,
   "visibility": "public",
-
+  "sun_position_picker": {
+    "showShadowToggle": false
+  },
   "camera": {
     "default_speeds": {
       "regular": {
