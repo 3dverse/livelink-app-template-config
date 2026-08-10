@@ -7,6 +7,18 @@
   "__scene3rdPersonController": "8c8bd21f-02fd-4612-b0a4-2671ab5e79a7",
   "enable3rdPersonController": true,
   "visibility": "public",
+  "entity_selector": [
+    {
+      "label": "drone",
+      "entity_id": "b8e51aa9-3a70-420b-b481-519b51798a7d"
+    },
+    {
+      "entity_id": "fcccece2-b32d-4703-b2bd-32830a286549"
+    },
+    {
+      "entity_id": "01f78df7-bd29-4960-9a14-8d14e7887147"
+    }
+  ],
 "click_to_watch_entity_cameras": true,
   "camera": {
     "default_speeds": {
