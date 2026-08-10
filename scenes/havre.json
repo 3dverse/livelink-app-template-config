@@ -7,7 +7,7 @@
   "__scene3rdPersonController": "8c8bd21f-02fd-4612-b0a4-2671ab5e79a7",
   "enable3rdPersonController": true,
   "visibility": "public",
-
+"click_to_watch_entity_cameras": true,
   "camera": {
     "default_speeds": {
       "regular": {
