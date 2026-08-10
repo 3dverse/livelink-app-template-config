@@ -10,6 +10,19 @@
   "sun_position_picker": {
     "showShadowToggle": false
   },
+  "entity_selector": [
+    {
+      "label": "drone",
+      "entity_id": "49bed4fb-e268-4472-9be4-02763edb86af"
+    },
+    {
+      "entity_id": "ede91519-ffca-4b10-bd79-fa1aed78df32"
+    },
+    {
+      "entity_id": "3e199735-a0d9-4d37-97a9-5e5d2043f475"
+    }
+  ],
+"click_to_watch_entity_cameras": true,
   "camera": {
     "default_speeds": {
       "regular": {
