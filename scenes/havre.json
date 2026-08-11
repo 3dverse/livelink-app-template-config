@@ -3,9 +3,9 @@
   "scene": "e82dcff0-c09c-4f8a-8c08-af22bb9c8922",
   "public_token": "public_eiuPLYSII4j--crV",
   "default_camera_mode": 3,
-  "__": "using the character of the common config.json",
-  "__scene3rdPersonController": "8c8bd21f-02fd-4612-b0a4-2671ab5e79a7",
-  "enable3rdPersonController": true,
+  //"__": "using the character of the common config.json",
+  //"__scene3rdPersonController": "8c8bd21f-02fd-4612-b0a4-2671ab5e79a7",
+  "enable3rdPersonController": false,
   "visibility": "public",
   "entity_selector": [
     {
