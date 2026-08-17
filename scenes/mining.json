@@ -3,11 +3,21 @@
   "scene": "319c5bff-16b8-4c81-83fc-15eb165ced42",
   "public_token": "public_eiuPLYSII4j--crV",
   "default_camera_mode": 3,
-  "__": "using the character of the common config.json",
-  "__scene3rdPersonController": "8c8bd21f-02fd-4612-b0a4-2671ab5e79a7",
-  "enable3rdPersonController": true,
+  "enable3rdPersonController": false,
   "visibility": "public",
-
+  "entity_selector": [
+    {
+      "label": "drone",
+      "entity_id": "0b141de8-c77e-45bb-bc87-f761ec6abd98"
+    },
+    {
+      "entity_id": "e5ff4b03-6e04-4c57-8549-4be1651b8e3b"
+    },
+    {
+      "entity_id": "c3326d76-7cda-48fb-a08f-979120a42d33"
+    }
+  ],
+"click_to_watch_entity_cameras": true,
   "camera": {
     "default_speeds": {
       "regular": {
