@@ -1,0 +1,22 @@
+{
+  "comment": "3dverse demo - mining 4.0",
+  "scene": "319c5bff-16b8-4c81-83fc-15eb165ced42",
+  "public_token": "public_eiuPLYSII4j--crV",
+  "default_camera_mode": 3,
+  "__": "using the character of the common config.json",
+  "__scene3rdPersonController": "8c8bd21f-02fd-4612-b0a4-2671ab5e79a7",
+  "enable3rdPersonController": true,
+  "visibility": "public",
+
+  "camera": {
+    "default_speeds": {
+      "regular": {
+        "move": 45
+      }
+    }
+  },
+
+  "sun_position_picker": {
+    "showShadowToggle": false
+  }
+}
