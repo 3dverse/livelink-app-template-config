@@ -6,7 +6,13 @@
   "enable3rdPersonController": true,
   "public_token": "public_vaq5r7jKZLqch7Eu",
   "visibility": "public",
-
+ "entity_selector": [
+    {
+      "label": "player",
+      "entity_id": "c9ac1a4b-456a-4ab0-a7fb-b66d645b84f9"
+    }
+  ],
+"click_to_watch_entity_cameras": true,
   "default_camera_mode": 2,
 
   "camera": {
