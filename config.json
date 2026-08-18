@@ -1,6 +1,7 @@
 {
   "scenes": [
     "dev",
+    "Entertainment",
     "aura-interact",
     "mitek",
     "sncf",
