@@ -6,12 +6,18 @@
   "enable3rdPersonController": true,
   "public_token": "public_vaq5r7jKZLqch7Eu",
   "visibility": "public",
- "entity_selector": 
+  "entity_selector": [
     {
-      "label": "player",
+      "label": "drone",
       "entity_id": "14dc8f24-c7b0-46c5-9506-e051147f0cfb"
+    },
+    {
+      "entity_id": "ede91519-ffca-4b10-bd79-fa1aed78df32"
+    },
+    {
+      "entity_id": "3e199735-a0d9-4d37-97a9-5e5d2043f475"
     }
-  ,
+  ],
 "click_to_watch_entity_cameras": true,
   "default_camera_mode": 2,
 
