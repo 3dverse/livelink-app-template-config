@@ -1,0 +1,19 @@
+{
+  "comment": "3dverse - VIP fan experience",
+  "scene": "629e5b47-64fb-4852-8c3a-5cb3cd4350ff",
+  "__": "using the character of the common config.json",
+  "__scene3rdPersonController": "39321a40-5176-4fed-83a6-c328a3f648b4",
+  "enable3rdPersonController": true,
+  "public_token": "public_vaq5r7jKZLqch7Eu",
+  "visibility": "public",
+
+  "default_camera_mode": 1,
+
+  "camera": {
+    "default_speeds": {
+      "regular": {
+        "move": 10
+      }
+    }
+  }
+}
