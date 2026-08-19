@@ -9,7 +9,7 @@
   "entity_selector": [
     {
       "label": "player",
-      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"]
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
       "entity_id": "a46facf3-8e2b-4f77-ab6a-eabe00e415f7"
     },
     {
