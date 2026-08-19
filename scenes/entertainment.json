@@ -8,15 +8,29 @@
   "visibility": "public",
   "entity_selector": [
     {
-      "label": "player",
+      "label": "player 1",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "0f5b832a-0788-4e74-a0c8-106b05f85ad3"
+    },
+    {
+      "label": "player 2",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "6ab0e377-ee8f-42c8-9e5f-56c4a0f1da84"
+    },
+    {
+      "label": "player 3",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "3c0b1513-7350-42f4-8680-b687fcc7703e"
+    },
+    {
+      "label": "player 4",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "14e040ec-3cbf-48ca-9041-ea261733b115"
+    },
+    {
+      "label": "player 5",
       "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
       "entity_id": "a46facf3-8e2b-4f77-ab6a-eabe00e415f7"
-    },
-    {
-      "entity_id": "ede91519-ffca-4b10-bd79-fa1aed78df32"
-    },
-    {
-      "entity_id": "3e199735-a0d9-4d37-97a9-5e5d2043f475"
     }
   ],
 "click_to_watch_entity_cameras": true,
