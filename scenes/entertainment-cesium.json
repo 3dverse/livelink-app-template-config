@@ -1,0 +1,46 @@
+{
+  "comment": "3dverse - VIP fan experience",
+  "scene": "4a32b137-d162-4e0d-b442-8bd08f65f14c",
+  "__": "using the character of the common config.json",
+  "__scene3rdPersonController": "39321a40-5176-4fed-83a6-c328a3f648b4",
+  "enable3rdPersonController": true,
+  "public_token": "public_vaq5r7jKZLqch7Eu",
+  "visibility": "public",
+  "entity_selector": [
+    {
+      "label": "player 1",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "0f5b832a-0788-4e74-a0c8-106b05f85ad3"
+    },
+    {
+      "label": "player 2",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "6ab0e377-ee8f-42c8-9e5f-56c4a0f1da84"
+    },
+    {
+      "label": "player 3",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "3c0b1513-7350-42f4-8680-b687fcc7703e"
+    },
+    {
+      "label": "player 4",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "14e040ec-3cbf-48ca-9041-ea261733b115"
+    },
+    {
+      "label": "player 5",
+      "linkage": ["14dc8f24-c7b0-46c5-9506-e051147f0cfb"],
+      "entity_id": "a46facf3-8e2b-4f77-ab6a-eabe00e415f7"
+    }
+  ],
+"click_to_watch_entity_cameras": true,
+  "default_camera_mode": 2,
+
+  "camera": {
+    "default_speeds": {
+      "regular": {
+        "move": 10
+      }
+    }
+  }
+}
