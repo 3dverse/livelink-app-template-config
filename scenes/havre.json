@@ -10,7 +10,7 @@
       "label": "drone",
       "entity_id": "b8e51aa9-3a70-420b-b481-519b51798a7d",
       "simulated": true
-    },
+    }
   ],
 "click_to_watch_entity_cameras": true,
   "camera": {
