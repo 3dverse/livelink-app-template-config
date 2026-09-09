@@ -42,5 +42,9 @@
         "move": 10
       }
     }
+  },
+
+  "sun_position_picker": {
+    "showShadowToggle": false
   }
 }
