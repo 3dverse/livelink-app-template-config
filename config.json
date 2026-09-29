@@ -1,6 +1,7 @@
 {
   "scenes": [
     "dev",
+    "chanel",
     "entertainment",
     "entertainment-cesium",
     "aura-interact",
