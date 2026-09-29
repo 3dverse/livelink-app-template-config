@@ -1,0 +1,16 @@
+{
+  "comment": "Chanel showroom",
+  "scene": "0fd5bc22-f52a-4984-8374-9dd7ef89d00f",
+  "public_token": "public_Oyh44KSTem4y5Hsb",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "hidden_header": false,
+  "camera": {
+    "default_speeds": {
+      "regular": {
+        "move": 1,
+        "zoom": 5
+      }
+    }
+  }
+}
