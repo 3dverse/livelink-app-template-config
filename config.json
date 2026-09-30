@@ -1,6 +1,7 @@
 {
   "scenes": [
     "dev",
+    "ds-automation",
     "chanel",
     "entertainment",
     "entertainment-cesium",
