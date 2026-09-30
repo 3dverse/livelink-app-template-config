@@ -1,0 +1,14 @@
+{
+  "comment": "DS Automation - BEGA POC",
+  "scene": "4f432151-1336-4770-b4f7-a334379e298b",
+  "public_token": "public_zEiiYKXlpN0mNTGA",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 2
+        }
+      }
+  }
+}
