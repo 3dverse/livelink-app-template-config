@@ -1,0 +1,17 @@
+{
+  "comment": "LBP - Lavaur",
+  "scene": "83de216e-c38e-4fef-831f-cb04f189f1af",
+  "public_token": "public_cralNws3x2jvN4np",
+  "default_camera_mode": 3,
+  "visibility": "public",
+  "camera": {
+    "default_speeds": {
+      "regular": {
+        "move": 45
+      }
+    }
+  },
+  "sun_position_picker": {
+    "showShadowToggle": false
+  }
+}
