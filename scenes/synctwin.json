@@ -10,5 +10,9 @@
           "move": 4
         }
       }
+  },
+
+  "sun_position_picker": {
+    "showShadowToggle": false
   }
 }
