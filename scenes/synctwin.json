@@ -1,0 +1,14 @@
+{
+  "comment": "3dverse demo - Synctwin",
+  "scene": "63a72b74-2b44-4a4f-97d4-82f3793f9bf0",
+  "public_token": "public_fDWjhrDucTUc8wd4",
+  "default_camera_mode": 3,
+  "visibility": "private",
+  "camera": {
+      "default_speeds": {
+        "regular": {
+          "move": 4
+        }
+      }
+  }
+}
