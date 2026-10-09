@@ -1,6 +1,7 @@
 {
   "scenes": [
     "dev",
+    "synctwin",
     "lbp-lavaur",
     "ds-automation",
     "chanel",
