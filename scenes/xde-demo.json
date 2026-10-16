@@ -5,5 +5,8 @@
   "public_token": "public_suRiWzkGO54VES-T",
   "default_camera_mode": 2,
   "visibility": "private",
-  "no_simulation_start": true
+  "no_simulation_start": true,
+  "plugins": {
+    "xde-virtual-controller": {}
+  }
 }

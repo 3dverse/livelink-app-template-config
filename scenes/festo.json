@@ -5,5 +5,11 @@
   "public_token": "public_uSUEBGIHmGPPLmbF",
   "default_camera_mode": 2,
   "visibility": "private",
-  "no_simulation_start": true
+  "no_simulation_start": true,
+  "__event_map_console_link": "https://console.3dverse.com/festo/festomx/default/folders/8832b9cf-2ec2-42a2-a1bc-3c208c8edf3c?item=ba4c1bbc-924c-49c4-b9bc-ce980877da67.event_map",
+  "plugins": {
+    "festo-animations": {
+      "event_map": "ba4c1bbc-924c-49c4-b9bc-ce980877da67"
+    }
+  }
 }
