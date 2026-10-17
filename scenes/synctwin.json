@@ -5,14 +5,27 @@
   "default_camera_mode": 3,
   "visibility": "private",
   "camera": {
-      "default_speeds": {
-        "regular": {
-          "move": 4
-        }
+    "default_speeds": {
+      "regular": {
+        "move": 4
       }
+    }
   },
 
   "sun_position_picker": {
     "showShadowToggle": false
-  }
+  },
+
+  "animation_controllers": [
+    {
+      "name": "Wandlebots",
+      "entity_id": "e57d7ee1-13c3-4b45-94a7-e5f9030ab132",
+      "linkage": ["f087fd29-8cdb-4c8c-a7c6-5a00aeb9beff"]
+    },
+    {
+      "name": "Atlas logistic Route Train",
+      "entity_id": "10fcd1d5-c4e0-4936-aad0-4ee391033641",
+      "linkage": ["aaef0909-3ad8-456d-abc6-71ee3b0540d5"]
+    }
+  ]
 }
