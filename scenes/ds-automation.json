@@ -2,6 +2,9 @@
   "comment": "DS Automation - BEGA POC",
   "scene": "4f432151-1336-4770-b4f7-a334379e298b",
   "public_token": "public_zEiiYKXlpN0mNTGA",
+  "__": "using the character of the common config.json",
+  "__scene3rdPersonController": "7ad339da-b5ef-401b-b9e5-cc526c129e6a",
+  "enable3rdPersonController": true,
   "default_camera_mode": 3,
   "visibility": "private",
   "camera": {
