@@ -1,5 +1,5 @@
 {
-  "comment": "3dverse demo - Synctwin - EMA",
+  "comment": "3dverse demo - Synctwin",
   "scene": "3ac62c58-2fec-40cf-954b-4c81fce968fc",
   "public_token": "public_fDWjhrDucTUc8wd4",
   "__": "using the character of the common config.json",
@@ -20,6 +20,11 @@
       "name": "EMA Sample line",
       "entity_id": "4587a2f1-52fc-497a-8dd5-603873e37614",
       "linkage": ["9ffb8db2-e0a4-4114-9419-6af085ebaa0f"]
+    },{
+      "name": "EMA Sample line",
+      "entity_id": "02d3d154-55ba-4876-9e1b-c7ae2c636c0d",
+      "linkage": ["d3bbcbae-94d5-4e3f-b2b2-1fdb5ace340e"]
     }
+    
   ]
 }
